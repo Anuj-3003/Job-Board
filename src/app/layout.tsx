@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
-import Header from "./components/header";
+import Header from "./components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,6 +24,12 @@ export default function RootLayout({
 
         {children}
         
+        <footer>
+          <div className=" px-10 text-gray-500 bg-gray-100 text-xs ">
+          Job Board - A project by Anuj Lokhande
+          </div>
+        </footer>
+
         </body>
     </html>
   );
