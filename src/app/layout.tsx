@@ -1,8 +1,8 @@
+import Header from "@/app/components/Header";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Link from "next/link";
-import Header from "./components/Header";
+import '@radix-ui/themes/styles.css';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,18 +19,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        
         <Header />
-
         {children}
-        
-        <footer>
-          <div className=" px-10 text-gray-500 bg-gray-100 text-xs ">
-          Job Board - A project by Anuj Lokhande
-          </div>
+        <footer className="container py-8 text-gray-500">
+          Job Board &copy; 2024 - All rights reserved
         </footer>
-
-        </body>
+      </body>
     </html>
   );
 }

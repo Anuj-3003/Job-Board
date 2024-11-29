@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     container: {
       screens: {
-          'lg': '768px',
-          'xl': '768px',
-          '2xl': '768px',
+        'lg': '768px',
+        'xl': '768px',
+        '2xl': '768px',
       },
       center: true,
       padding: {
