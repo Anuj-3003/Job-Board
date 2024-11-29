@@ -26,7 +26,7 @@ export default async function Header() {
                         </form>
                         
                     )}
-                    <Link className="bg-blue-600 rounded-md py-2 px-4 text-white" href={'/newlisting'}>
+                    <Link className="bg-blue-600 rounded-md py-2 px-4 text-white" href={'/new-listing'}>
                     Post Jobs
                     </Link>
                 </nav>
